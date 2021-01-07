@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnotherTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvz-kC-kmc">
+                                <rect key="frame" x="177" y="40" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="SXu-6C-SZj"/>
+                                    <constraint firstAttribute="height" constant="30" id="uNF-kw-tPP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1TK-ez-TOn">
+                                <rect key="frame" x="0.0" y="84" width="414" height="652"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOne" rowHeight="100" id="FYu-TX-4to" customClass="CellTableViewCell" customModule="AnotherTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FYu-TX-4to" id="8ZH-xN-90x">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAJ-Gy-9Tv">
+                                                    <rect key="frame" x="90" y="35" width="234" height="34"/>
+                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="UEi-c0-GIi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lAJ-Gy-9Tv" firstAttribute="top" secondItem="8ZH-xN-90x" secondAttribute="topMargin" constant="24" id="3ms-1n-DsG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lAJ-Gy-9Tv" secondAttribute="trailing" constant="70" id="7Fb-XC-IH1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lAJ-Gy-9Tv" secondAttribute="bottom" constant="20" id="A46-5C-Kfx"/>
+                                                <constraint firstItem="lAJ-Gy-9Tv" firstAttribute="leading" secondItem="8ZH-xN-90x" secondAttribute="leadingMargin" constant="70" id="X73-y3-ey2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <connections>
+                                            <outlet property="userName" destination="lAJ-Gy-9Tv" id="fJl-cq-bT7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellTwo" rowHeight="100" id="Drr-J1-DOR" customClass="CellTableViewCell" customModule="AnotherTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Drr-J1-DOR" id="cZ4-E0-1wP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-G4-ves">
+                                                    <rect key="frame" x="168" y="12" width="74" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="A0w-1g-Oet"/>
+                                                        <constraint firstAttribute="width" constant="100" id="nYn-7i-fHq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                    <state key="normal" backgroundImage="camera.circle" catalog="system">
+                                                        <color key="titleColor" systemColor="systemRedColor"/>
+                                                        <color key="titleShadowColor" systemColor="systemPurpleColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gAf-G4-ves" firstAttribute="leading" secondItem="cZ4-E0-1wP" secondAttribute="leadingMargin" constant="137" id="6sX-pE-G2w"/>
+                                                <constraint firstItem="gAf-G4-ves" firstAttribute="top" secondItem="cZ4-E0-1wP" secondAttribute="topMargin" id="G7Z-so-Uff"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gAf-G4-ves" secondAttribute="trailing" constant="137" id="J2a-Xj-vPL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gAf-G4-ves" secondAttribute="bottom" constant="11.67" id="Zyv-g2-9NG"/>
+                                                <constraint firstItem="gAf-G4-ves" firstAttribute="centerX" secondItem="cZ4-E0-1wP" secondAttribute="centerX" id="hIi-q5-M5L"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellThree" rowHeight="100" id="zp4-85-fLV" customClass="CellTableViewCell" customModule="AnotherTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zp4-85-fLV" id="5e3-lr-FIr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9a-mA-ifH">
+                                                    <rect key="frame" x="164.66666666666666" y="21" width="85" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="85" id="Gt1-aH-vOy"/>
+                                                        <constraint firstAttribute="height" constant="50" id="ThB-yo-sn9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                    <state key="normal" title="SEND">
+                                                        <color key="titleColor" systemColor="systemYellowColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="A9a-mA-ifH" secondAttribute="bottom" constant="10" id="RSd-Zn-jcp"/>
+                                                <constraint firstItem="A9a-mA-ifH" firstAttribute="centerX" secondItem="5e3-lr-FIr" secondAttribute="centerX" id="RVr-0f-DQN"/>
+                                                <constraint firstItem="A9a-mA-ifH" firstAttribute="top" secondItem="5e3-lr-FIr" secondAttribute="topMargin" constant="10" id="pqZ-A6-sNT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="r1Y-KU-kmf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="c7K-es-KKD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="qvz-kC-kmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HXk-93-yRy"/>
+                            <constraint firstItem="1TK-ez-TOn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="I2I-Kd-ZW7"/>
+                            <constraint firstItem="1TK-ez-TOn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lPl-qZ-Fhb"/>
+                            <constraint firstItem="qvz-kC-kmc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="qWC-wW-97x"/>
+                            <constraint firstItem="1TK-ez-TOn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rcp-j0-oNr"/>
+                            <constraint firstItem="1TK-ez-TOn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s3w-r0-oAf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableMain" destination="1TK-ez-TOn" id="YCt-dh-yiG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.858695652173921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
